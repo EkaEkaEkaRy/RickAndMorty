@@ -1,0 +1,13 @@
+{"settings": "Настройки",
+"dark_theme": "Темная тема",
+"light_theme": "Светлая тема",
+"home": "Главная", 
+"favorite": "Избранное",
+"error": "Ошибка",
+"empty_list": "Нет карточек",
+"sort": "Сортировка",
+"date_new": "Дата (новые)",
+"date_old": "Дата (старые)",
+"name_abs": "A → Z",
+"name_desc": "Z → A",
+"all": "Всё"}

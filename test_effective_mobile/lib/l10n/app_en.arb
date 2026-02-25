@@ -1,0 +1,13 @@
+{"settings": "Settings",
+"dark_theme": "Dark theme",
+"light_theme": "Light theme",
+"home": "Home",
+"favorite": "Favorite",
+"error": "Error",
+"empty_list": "No cards",
+"sort": "Sort",
+"date_new": "Date (new)",
+"date_old": "Date (old)",
+"name_abs": "A → Z",
+"name_desc": "Z → A",
+"all": "All"}
