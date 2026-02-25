@@ -46,7 +46,7 @@
 
 **Rick and Morty Android**
 
-[![Download APK](https://img.shields.io/badge/Download-APK-brightgreen?style=for-the-badge&logo=android)](https://github.com/EkaEkaEkaRy/RickAndMorty/releases)
+[![Download APK](https://img.shields.io/badge/Download-APK-brightgreen?style=for-the-badge&logo=android)](https://github.com/EkaEkaEkaRy/RickAndMorty/tree/main/release)
 
 </div>
 
@@ -99,5 +99,9 @@ provider: ^6.1.2              # Dependency Injection (Глобальные на�
 sqflite: ^2.4.2               # Локальная БД (кэш + избранное)
 http: ^1.6.0                  # Запросы к Rick and Morty API
 shared_preferences: ^2.5.3    # Сохранение темы/языка
+intl: ^0.20.2                 # Локализация
 flutter_gen: ^5.12.0          # Генерация ресурсов (локализация)
+path: ^1.9.1                  # Работа с файлами БД
+path_provider: ^2.1.5         # Работа с файлами БД
+flutter_dotenv: ^6.0.0        # Конфигурация API URL
 ```
