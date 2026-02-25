@@ -36,11 +36,13 @@ class DatabaseHelper {
       date TEXT NOT NULL);''');
   }
 
+  // Очистка кеша
   Future<void> deleteCache() async {
     final db = await database;
     await db.execute('DELETE FROM cache_items');
   }
 
+  // Получение данных из кеша
   Future<List<Item>> getCachedItems() async {
     final db = await database;
     final items = await db.rawQuery('''
@@ -70,6 +72,7 @@ class DatabaseHelper {
     return itemsList;
   }
 
+  // Получение избранных карточек
   Future<List<Item>> getFavoriteItems() async {
     final db = await database;
     final items = await db.query('favorite_items', orderBy: 'date DESC');
@@ -88,6 +91,7 @@ class DatabaseHelper {
     return itemsList;
   }
 
+  // Кеширование данных
   Future<void> cacheItems(List<Item> items) async {
     final db = await database;
     await db.transaction((txn) async {
@@ -103,6 +107,7 @@ class DatabaseHelper {
     });
   }
 
+  // Добавление карточки в избранное
   Future<void> addFavoriteItem(Item item) async {
     final db = await database;
     await db.insert('favorite_items', {
@@ -114,6 +119,7 @@ class DatabaseHelper {
     });
   }
 
+  // Удаление карточки из избранных
   Future<void> deleteFavoriteItem(int id) async {
     final db = await database;
     await db.delete('favorite_items', where: 'id = ?', whereArgs: [id]);
