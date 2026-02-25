@@ -56,7 +56,7 @@ flutter build apk --release
 
 ***
 
-## Требования
+## Версии
 
 - **Flutter**: 3.41.2 -  Dart 3.11.0
 - **Android**: API 21+ (5.0+)
