@@ -22,6 +22,7 @@ class ItemsError extends ItemsState {
   ItemsError(this.message);
 }
 
+// Если список пуст
 class ItemsEmpty extends ItemsState {
   ItemsEmpty();
 }

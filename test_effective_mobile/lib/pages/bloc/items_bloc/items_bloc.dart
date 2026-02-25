@@ -19,6 +19,7 @@ class ItemsBloc extends Bloc<ItemsEvent, ItemsState> {
     on<FilterStatus>(_onFilterStatus);
   }
 
+  // При загрузке карточек
   Future<void> _onLoadItems(LoadItems event, Emitter<ItemsState> emit) async {
     emit(ItemsLoading());
 
@@ -57,6 +58,7 @@ class ItemsBloc extends Bloc<ItemsEvent, ItemsState> {
     }
   }
 
+  // При загрузке избранных карточек
   Future<void> _onLoadFavoriteItems(
     LoadFavoriteItems event,
     Emitter<ItemsState> emit,
@@ -81,6 +83,7 @@ class ItemsBloc extends Bloc<ItemsEvent, ItemsState> {
     }
   }
 
+  // При добавлении и удалении карточки в избранном
   Future<void> _onToggleFavoriteItem(
     ToggleFavoriteItem event,
     Emitter<ItemsState> emit,
@@ -100,6 +103,7 @@ class ItemsBloc extends Bloc<ItemsEvent, ItemsState> {
     emit(ItemsLoaded(items: updatedItems));
   }
 
+  // При сортивке
   Future<void> _onSortItems(SortItems event, Emitter<ItemsState> emit) async {
     if (state is! ItemsLoaded) return;
 
@@ -126,6 +130,7 @@ class ItemsBloc extends Bloc<ItemsEvent, ItemsState> {
     emit(currentState.copyWith(items: sortedItems));
   }
 
+  // При фильтрации
   Future<void> _onFilterStatus(
     FilterStatus event,
     Emitter<ItemsState> emit,

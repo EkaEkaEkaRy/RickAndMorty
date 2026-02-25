@@ -1,20 +1,24 @@
 abstract class ItemsEvent {}
 
+// Загрузка карточек
 class LoadItems extends ItemsEvent {
   final bool isRefresh;
   LoadItems({this.isRefresh = false});
 }
 
+// Загрузка избранных карточек
 class LoadFavoriteItems extends ItemsEvent {
   final bool isRefresh;
   LoadFavoriteItems({this.isRefresh = false});
 }
 
+// Нажатие на кнопку-звездочку
 class ToggleFavoriteItem extends ItemsEvent {
   final int itemId;
   ToggleFavoriteItem(this.itemId);
 }
 
+// Сортировка
 enum SortType { alphabetAsc, alphabetDesc, dateDesc, dateAsc }
 
 class SortItems extends ItemsEvent {
@@ -22,6 +26,7 @@ class SortItems extends ItemsEvent {
   SortItems(this.sortType);
 }
 
+// Фильтрация
 enum StatusFilter { alive, dead, unknown, all }
 
 class FilterStatus extends ItemsEvent {
