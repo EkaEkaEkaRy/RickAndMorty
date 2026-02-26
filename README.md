@@ -46,7 +46,8 @@
 
 **Rick and Morty Android**
 
-[![Download APK](https://img.shields.io/badge/Download-APK-brightgreen?style=for-the-badge&logo=android)](https://github.com/EkaEkaEkaRy/RickAndMorty/tree/main/release)
+[![Download APK](https://img.shields.io/badge/Download-APK-brightgreen?style=for-the-badge&logo=android)](https://github.com/EkaEkaEkaRy/RickAndMorty/releases/download/v1.0.0/app-release.apk)
+
 
 </div>
 
