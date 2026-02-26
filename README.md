@@ -85,6 +85,9 @@ flutter run
 ```bash
 # APK
 flutter build apk --release
+
+# IOS
+flutter build ios --release
 ```
 
 ***
